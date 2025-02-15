@@ -1,9 +1,40 @@
+/* body */
+/* Fondo gris claro para simular un escritorio */
+.cv-body {
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* Contenedor que simula la hoja de oficio */
+.cv-container {
+    width: 21cm; /* Ancho de hoja tamaño A4 u oficio */
+    min-height: 29.7cm; /* Alto de la hoja */
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para efecto realista */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: Arial, sans-serif;
+}
+.cv-container h4{
+    opacity: 0.7;
+}
+
+
 /* Encabezado */
 .encabezado {
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    
+}
+.encabezad2 {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
 }
 .sobre-mi{
     border-bottom: 2px solid blue;
@@ -74,7 +105,8 @@ p {
 /* Educacion */
 .education {
     width: 100%;
-    height: 100%;
+    height: 30%;
     object-fit: cover;
     border-radius: 10px;
+    border-bottom: 2px solid blue;
 }
