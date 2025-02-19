@@ -42,7 +42,8 @@
 }
 /* Imagen y Contenedor */
 .img-box {
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     height: 150px;
     background-color: darkgrey;
     display: flex;
@@ -64,21 +65,23 @@
 }
 .img-box img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
 /* Cuadro de Información */
 .info-box {
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     background-color: #e0dcdc;
     border-radius: 10px;
     text-align: center;
 }
 .info-box-contactos{
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     background-color: #e0dcdc;
     border-radius: 10px;
@@ -86,7 +89,8 @@
     margin-top: 10px;
 }
 .info-box-redes{
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     background-color: #e0dcdc;
     border-radius: 10px;
@@ -99,7 +103,8 @@
     font-size: 15px;
 }
 .info-box-porcentaje{
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     background-color: #e0dcdc;
     border-radius: 10px;
@@ -149,4 +154,43 @@ h6{
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
+}
+/* Agregar media queries para pantallas pequeñas */
+@media(max-width: 768px){
+    .cv-container{
+        width: 100%;/* se ajusta al 100% de la pantalla */
+        padding: 20px;
+    }
+    .encabezado{
+        font-size: 1.5rem; /* reduce el tamaño del encabesao*/
+    }
+    .img-box{
+        width: 120px;
+        height: 120px;
+    }
+    .info-box, .info-box-contactos, .info-box-redes {
+        width: 100%;
+        margin-bottom: 15px; /* Añadir espacio entre cajas */
+    }
+    .sobre-mi, .education, .experiencia {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .cv-container {
+        padding: 10px;
+    }
+    .encabezado {
+        font-size: 1.2rem; /* Ajustar aún más el tamaño */
+    }
+    .img-box {
+        width: 100px;
+        height: 100px;
+    }
+    .info-box, .info-box-contactos, .info-box-redes {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
